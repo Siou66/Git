@@ -1,0 +1,32 @@
+   12  git clone https://github.com/Siou66/Git.git Git
+   13  cd Git/
+   14  mkdir app public
+   15  touch index.html package.json
+   16  cd app/
+   17  mkdir controller entity repository
+   18  cd ..
+   19  cd public/
+   20  mkdir css js media
+   21  cd ..
+   22  tree
+   23  git add *
+   24  git status
+   25  git commit -m "sauvegarde 1"
+   26  touch app/controller/HomeController.php app/entity/User.php app/repository/UserRepository.php
+   27  git add app/
+   29  git commit -m "sauvegarde add/"
+   30  touch public/css/main.css public/js/app.js public/media/profil.png
+   31  git add public/
+   32  git commit -m "sauvegarde public/"
+   33  rm -r public/
+   34  git add *
+   35  git commit -m "suppr public/"
+   36  ls -a > arboressence.txt
+   37  cat arboressence.txt 
+   38  git add arboressence.txt 
+   39  git commit -m "arboressence"
+   41  git push origin main
+   42  history > exercice4.txt
+   44  cat exercice4.txt 
+   46  git commit -u -m "suppr Public/ v2"
+   47  history >> exercice4.txt 
